@@ -16,3 +16,7 @@ Installation
 ============
 Put latex-pretty-symbols.el  in your load-path, and put 
 (require 'latex-pretty-symbols) in your init-file.
+If you do not use AUCTeX, but the standard latex mode (you should really try 
+auctex), you might need to add something like:
+(add-hook 'latex-mode-hook 'latex-unicode-simplified)
+to your init file. 
