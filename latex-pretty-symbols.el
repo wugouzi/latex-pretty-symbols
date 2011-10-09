@@ -7,7 +7,7 @@
 ;; Created: 10. July 2011
 ;; Version: 1.0
 ;; Keywords: convenience, display
-;; Derived from  pretty-lambdada.el (http://www.emacswiki.org/emacs/PrettyLambda ) by Drew Adams
+;; Derived from  pretty-lambda.el (http://www.emacswiki.org/emacs/PrettyLambda ) by Drew Adams
 
 ;; This file is not part of GNU Emacs.
 
