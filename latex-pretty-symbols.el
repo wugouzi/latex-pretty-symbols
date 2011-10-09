@@ -41,6 +41,8 @@
 ;;   each other, resulting in a mighty mess.  This problem might be demomposed into two types: When the replaced
 ;;   string is bigger than the string replacing it (probably the easiest case), and the converse case.
 ;;
+;;   Package it as a elpa/marmelade package.
+;;
 ;;   Also it would be nice if it had some configuration possibilities. Eg the
 ;;   ability to add own abreviations through the customization interface, or
 ;;   toggle the display of math-curly-braces.
