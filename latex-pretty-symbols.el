@@ -1,4 +1,4 @@
-;;; latex-unicode.el --- Show many latex commands as their unicode counterparts
+;;; latex-pretty-symbols.el --- Show many latex commands as their unicode counterparts
 
 ;; Copyright (C) 2011 Erik Parmann, Pål Drange
 ;;
