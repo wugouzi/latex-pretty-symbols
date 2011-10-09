@@ -1,3 +1,5 @@
+Overview
+========
 latex-pretty-symbols.el makes emacs display unicode characters instead of latex
 commands for a lot of the most usual symbols.
 
