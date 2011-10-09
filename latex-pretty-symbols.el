@@ -50,7 +50,7 @@
   "Add a font lock hook to replace the matched part of PATTERN with the Unicode
 symbol SYMBOL.
 Symbol can be the symbol directly, no lookup needed."
-  (Interactive)
+  (interactive)
   (font-lock-add-keywords
    nil
    `((,pattern
