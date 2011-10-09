@@ -525,8 +525,11 @@ their unicode counterpart"
     (list (latex-escape-regex "doteq") "≐")
     )))
 
-
+;;AUCTeX
 (add-hook 'LaTeX-mode-hook 'latex-unicode-simplified)
+
+;;latex-mode
+(add-hook 'latex-mode-hook 'latex-unicode-simplified)
 (provide 'latex-pretty-symbols)
 
 ;;; latex-unicode.el ends here
