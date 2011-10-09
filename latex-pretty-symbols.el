@@ -44,6 +44,11 @@
 ;;   Also it would be nice if it had some configuration possibilities. Eg the
 ;;   ability to add own abreviations through the customization interface, or
 ;;   toggle the display of math-curly-braces.
+;;
+;;  On a longer timeline, it would be nice if it could understand some basic
+;;  newcommands, and automatically deduce the needed unicode (but this seems
+;;  super hard).
+
 
 ;;; Code:
 (defun substitute-pattern-with-unicode-symbol (pattern symbol)
