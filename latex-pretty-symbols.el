@@ -47,9 +47,9 @@
 ;;   ability to add own abreviations through the customization interface, or
 ;;   toggle the display of math-curly-braces.
 ;;
-;;  On a longer timeline, it would be nice if it could understand some basic
-;;  newcommands, and automatically deduce the needed unicode (but this seems
-;;  super hard).
+;;   On a longer timeline, it would be nice if it could understand some basic
+;;   newcommands, and automatically deduce the needed unicode (but this seems
+;;   super hard).
 
 
 ;;; Code:
