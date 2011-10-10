@@ -1,12 +1,13 @@
-;;; latex-pretty-symbols.el --- Show many latex commands as their unicode counterparts
+;;; latex-pretty-symbols.el --- Display many latex symbols as their unicode counterparts
 
 ;; Copyright (C) 2011 Erik Parmann, Pål Drange
 ;;
-;; Author: Erik Parmann
+;; Author: Erik Parmann <eparmann@gmail.com>
 ;;         Pål Drange
 ;; Created: 10. July 2011
 ;; Version: 1.0
 ;; Keywords: convenience, display
+;; Url: https://bitbucket.org/mortiferus/latex-pretty-symbols.el
 ;; Derived from  pretty-lambda.el (http://www.emacswiki.org/emacs/PrettyLambda ) by Drew Adams
 
 ;; This file is not part of GNU Emacs.
@@ -25,21 +26,22 @@
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ;;; License:
-
 ;; Licensed under the same terms as Emacs.
 
 ;;; Commentary:
-;; Description:
-;;   This library use font-locking to change the way Emacs displays various latex commands, like \Gamma, \Phi, etc.
-;;   It does not actually change the content of the file, only the way it is displayed.
+;; Description: This library use font-locking to change the way Emacs displays
+;;   various latex commands, like \Gamma, \Phi, etc.  It does not actually
+;;   change the content of the file, only the way it is displayed.
 ;;
 ;; Quick start:
 ;;   add this file to load path, then (require 'latex-unicode)
-;; TODO:
-;;   The most pressing isue is a way to let not only single symbols be displayed, but also strings.
-;;   Then we can e.g display "⟨⟨C⟩⟩" instead of atldiamond.  Currently the 5 symbols gets placed on top of
-;;   each other, resulting in a mighty mess.  This problem might be demomposed into two types: When the replaced
-;;   string is bigger than the string replacing it (probably the easiest case), and the converse case.
+;;
+;; TODO: The most pressing isue is a way to let not only single symbols be
+;;   displayed, but also strings.  Then we can e.g display "⟨⟨C⟩⟩" instead of
+;;   atldiamond.  Currently the 5 symbols gets placed on top of each other,
+;;   resulting in a mighty mess.  This problem might be demomposed into two
+;;   types: When the replaced string is bigger than the string replacing it
+;;   (probably the easiest case), and the converse case.
 ;;
 ;;   Package it as a elpa/marmelade package.
 ;;
@@ -532,4 +534,4 @@ their unicode counterpart"
 (add-hook 'latex-mode-hook 'latex-unicode-simplified)
 (provide 'latex-pretty-symbols)
 
-;;; latex-unicode.el ends here
+;;; latex-pretty-symbols.el ends here
