@@ -34,7 +34,7 @@
 ;;   change the content of the file, only the way it is displayed.
 ;;
 ;; Quick start:
-;;   add this file to load path, then (require 'latex-unicode)
+;;   add this file to load path, then (require 'latex-pretty-symbols)
 ;;
 ;; TODO: The most pressing isue is a way to let not only single symbols be
 ;;   displayed, but also strings.  Then we can e.g display "⟨⟨C⟩⟩" instead of
