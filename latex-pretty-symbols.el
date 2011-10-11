@@ -45,6 +45,12 @@
 ;;   (probably the easiest case), and the converse case.
 ;;
 ;;   Package it as a elpa/marmelade package.
+;;   --A problem here is that marmelade destroys the unicode encoding. A
+;;   possible fix for this is to change this code, so instead of containing the
+;;   unicode characters directly, it can contain the code for each of them as an
+;;   integer. This would probably be more portable/safe, but in some way less
+;;   userfriendly, as one can not scan through the file to see which symbols it
+;;   has, and to enter one one needs to find the code
 ;;
 ;;   Also it would be nice if it had some configuration possibilities. Eg the
 ;;   ability to add own abreviations through the customization interface, or
