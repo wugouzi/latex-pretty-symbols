@@ -60,7 +60,7 @@
 ;;   newcommands, and automatically deduce the needed unicode (but this seems
 ;;   super hard).
 
-
+(require 'cl-lib)
 ;;; Code:
 (defun substitute-pattern-with-unicode-symbol (pattern symbol)
   "Add a font lock hook to replace the matched part of PATTERN with the Unicode
@@ -94,7 +94,7 @@ Symbol can be the symbol directly, no lookup needed."
   "Mapping over PATTERNS, calling SUBSTITUTE-PATTERN-WITH-UNICODE for each of the patterns."
   (mapcar #'(lambda (x)
               (substitute-pattern-with-unicode-symbol (car x)
-						      (second x)))
+						      (cl-second x)))
           patterns))
 
 (defun latex-escape-regex (str)
@@ -120,7 +120,7 @@ should be a superscript or subscript, and a boolean for
   ;; matching, only the outermost. Adding "?:" where it can be done makes
   ;; matching more effecient, as the engine dont need to make a backreference
   (if backslash (setf str (concat "\\\\" str)))
-  (case sup-or-sub
+  (cl-case sup-or-sub
     ('sub  (concat "\\(_\\(?:" str "\\|{" str "}\\)\\)"))
     ('sup  (concat "\\(\\^\\(?:" str "\\|{" str "}\\)\\)"))))
 
