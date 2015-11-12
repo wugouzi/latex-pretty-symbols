@@ -6,6 +6,7 @@
 ;;         Pål Drange
 ;; Created: 10. July 2011
 ;; Version: 1.0
+;; Package-Version: 20150409.240
 ;; Keywords: convenience, display
 ;; Url: https://bitbucket.org/mortiferus/latex-pretty-symbols.el
 ;; Derived from  pretty-lambda.el (http://www.emacswiki.org/emacs/PrettyLambda ) by Drew Adams
@@ -194,14 +195,16 @@ their unicode counterpart"
     (list (latex-escape-regex "sigma")"σ")
     (list (latex-escape-regex "tau")"τ")
     (list (latex-escape-regex "upsilon")"υ")
-    (list (latex-escape-regex "phi")"φ")
+    (list (latex-escape-regex "phi") "ϕ")
     (list (latex-escape-regex "chi")"χ")
     (list (latex-escape-regex "psi")"ψ")
     (list (latex-escape-regex "omega")"ω")
 
     ;; relations
     (list (latex-escape-regex "geq")"≥")
+    (list (latex-escape-regex "ge")"≥")
     (list (latex-escape-regex "leq")"≤")
+    (list (latex-escape-regex "le")"≤")
     (list (latex-escape-regex "neq")"≠")
 
     ;; logical ops
@@ -420,7 +423,7 @@ their unicode counterpart"
     (list (latex-escape-regex "L") "Ł")
     (list (latex-escape-regex "copyright") "©")
     (list (latex-escape-regex "epsilon") "ϵ")
-    (list (latex-escape-regex "phi") "ϕ")
+    (list (latex-escape-regex "varphi") "φ")
     (list (latex-escape-regex "vartheta") "ϑ")
     (list (latex-escape-regex "varpi") "ϖ")
     (list (latex-escape-regex "varrho") "ϱ")
