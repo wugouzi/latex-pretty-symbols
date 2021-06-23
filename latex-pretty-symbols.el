@@ -212,6 +212,8 @@ their unicode counterpart"
     (list (latex-escape-regex "lor")"∨")
     (list (latex-escape-regex "neg")"¬")
     (list (latex-escape-regex "rightarrow")"→")
+    (list (latex-escape-regex "to")"→")
+    (list (latex-escape-regex "xrightarrow")"→")
     (list (latex-escape-regex "leftarrow")"←")
     (list (latex-escape-regex "leftrightarrow")"↔")
     (list (latex-escape-regex "Rightarrow")"⇒")
