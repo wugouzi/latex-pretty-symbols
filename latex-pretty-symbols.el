@@ -237,6 +237,7 @@ their unicode counterpart"
     
     (list (latex-escape-regex "mid")"|")
     (list (latex-escape-regex "in")"∊")
+    (list (latex-escape-regex "not\\in")"∉")
     (list (latex-escape-regex "notin")"∉")
     (list (latex-escape-regex "cup")"∪")
     (list (latex-escape-regex "cap")"∩")
@@ -381,7 +382,8 @@ their unicode counterpart"
 
 
     ;;Wu's personal definition of commands
-
+    ;;https://en.wikipedia.org/wiki/List_of_mathematical_symbols_by_subject
+    ;;𝔸 𝔹 ℂ 𝔻 𝔼 𝔽 𝔾 ℍ 𝕀 𝕁 𝕂 𝕃 𝕄 ℕ 𝕆 ℙ ℚ ℝ 𝕊 𝕋 𝕌 𝕍 𝕎 𝕏 𝕐 ℤ
     (list (latex-escape-regex "A") "𝔸")
     (list (latex-escape-regex "B") "𝔹")
     (list (latex-escape-regex "C") "ℂ")
@@ -409,7 +411,7 @@ their unicode counterpart"
     (list (latex-escape-regex "Y") "𝕐")
     (list (latex-escape-regex "Z") "ℤ")
 
-
+    ;;𝔄 𝔅 ℭ 𝔇 𝔈 𝔉 𝔊 ℌ ℑ 𝔍 𝔎 𝔏 𝔐 𝔑 𝔒 𝔓 𝔔 ℜ 𝔖 𝔗 𝔘 𝔙 𝔚 𝔛 𝔜 ℨ
     (list (latex-escape-regex "fA") "𝔄")
     (list (latex-escape-regex "fB") "𝔅")
     (list (latex-escape-regex "fC") "ℭ")
@@ -464,7 +466,8 @@ their unicode counterpart"
     (list (latex-escape-regex "fy") "𝔶")
     (list (latex-escape-regex "fz") "𝔷")
 
-
+    ;;𝒜 ℬ 𝒞 𝒟 ℰ ℱ 𝒢 ℋ ℐ 𝒥 𝒦 ℒ ℳ 𝒩 𝒪 𝒫 𝒬 ℛ 𝒮 𝒯 𝒰 𝒱 𝒲 𝒳 𝒴 𝒵
+    ;;𝓐 𝓑 𝓒 𝓓 𝓔 𝓕 𝓖 𝓗 𝓘 𝓙 𝓚 𝓛 𝓜 𝓝 𝓞 𝓟 𝓠 𝓡 𝓢 𝓣 𝓤 𝓥 𝓦 𝓧 𝓨 𝓩
     ;;MATHEMATICAL BOLD SCRIPT CAPITAL
     (list (latex-escape-regex "cala") "𝓐")
     (list (latex-escape-regex "calb") "𝓑")
@@ -571,13 +574,19 @@ their unicode counterpart"
     ;;level. Regular expressions can not do general, arbitrary depth,
     ;;paranthesis matching, but maybe emacs's "regexps" are expressiable enough for
     ;;this?
+    ;;good listing
+    ;;https://www.w3.org/2001/06/utf-8-test/TeX.html
     (list  "\\(\\\\pair\\[\\)" "⟨")
     (list  "\\(?:\\\\pair\\[[^\]]*\\(]\\)\\)" "⟩")
     
     (list (latex-escape-regex "dagger") "†" )
     (list (latex-escape-regex "vDash") "⊨" )
-    (list (latex-escape-regex "bigvee") "⋁" )
+    (list (latex-escape-regex "wedge") "∧" )
     (list (latex-escape-regex "bigwedge") "⋀" )
+    (list (latex-escape-regex "vee") "∨" )
+    (list (latex-escape-regex "bigvee") "⋁" )
+    ;;(list (latex-escape-regex "bigvee") "⋁" )
+    ;;(list (latex-escape-regex "bigwedge") "⋀" )
     (list (latex-escape-regex "biguplus") "⨄" )
     (list (latex-escape-regex "bigcap") "⋂" )
     (list (latex-escape-regex "bigcup") "⋃" )
@@ -710,6 +719,9 @@ their unicode counterpart"
     (list (latex-escape-regex "cong") "≅")
     (list (latex-escape-regex "rightleftharpoons") "⇌")
     (list (latex-escape-regex "doteq") "≐")
+
+    (list (latex-escape-regex "quad") "␣")
+
     )))
 
 ;;AUCTeX
