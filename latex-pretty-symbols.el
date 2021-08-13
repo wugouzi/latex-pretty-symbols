@@ -722,6 +722,12 @@ their unicode counterpart"
 
     (list (latex-escape-regex "quad") "␣")
 
+    (list (latex-escape-regex "sqsubset") "⊏")
+    (list (latex-escape-regex "sqsupset") "⊐")
+
+    (list (latex-escape-regex "la") "⟨")
+    (list (latex-escape-regex "ra") "⟩")
+
     )))
 
 ;;AUCTeX
