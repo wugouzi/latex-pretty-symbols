@@ -206,6 +206,9 @@ their unicode counterpart"
     (list (latex-escape-regex "leq")"≤")
     (list (latex-escape-regex "le")"≤")
     (list (latex-escape-regex "neq")"≠")
+    ;;
+    (list (latex-escape-regex "lhd")"⊲")
+    (list (latex-escape-regex "rhd")"⊳")
 
     ;; logical ops
     (list (latex-escape-regex "land")"∧")
@@ -702,6 +705,15 @@ their unicode counterpart"
     (list (latex-escape-regex "longmapsto") "⟼")
     (list (latex-escape-regex "longleftrightarrow") "⟷")
     (list (latex-escape-regex "Longleftrightarrow") "⟺")
+    (list (latex-escape-regex "rightrightarrows") "⇉")
+    (list (latex-escape-regex "leftleftarrows") "⇇")
+    (list (latex-escape-regex "upuparrows") "⇈")
+    (list (latex-escape-regex "leftrightarrows") "⇆")
+    (list (latex-escape-regex "rightleftarrows") "⇄")
+    (list (latex-escape-regex "rightsquigarrow") "⇝")
+    (list (latex-escape-regex "leftsquigarrow") "⇜")
+    (list (latex-escape-regex "twoheadleftarrow") "↞")
+    (list (latex-escape-regex "twoheadrightarrow") "↠")
     (list (latex-escape-regex "cdots") "⋯")
     (list (latex-escape-regex "vdots") "⋮")
     (list (latex-escape-regex "ddots") "⋱")
