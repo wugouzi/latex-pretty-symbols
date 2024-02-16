@@ -218,6 +218,7 @@ their unicode counterpart"
     (list (latex-escape-regex "to")"→")
     (list (latex-escape-regex "xrightarrow")"→")
     (list (latex-escape-regex "leftarrow")"←")
+    (list (latex-escape-regex "gets")"←")
     (list (latex-escape-regex "leftrightarrow")"↔")
     (list (latex-escape-regex "Rightarrow")"⇒")
     (list (latex-escape-regex "Leftarrow")"⇐")
@@ -315,7 +316,6 @@ their unicode counterpart"
     (list (latex-escape-regex-sup "W") "ᵂ")
     
     
-    
     ;;Subscripts, unfortunately we lack important part of the subscriptet alphabet, most notably j and m
     (list (latex-escape-regex-sub "1")"₁")
     (list (latex-escape-regex-sub "2")"₂")
@@ -347,6 +347,7 @@ their unicode counterpart"
     (list (latex-escape-regex "mapsto")"↦")
     (list (latex-escape-regex "to")"→")
     (list (latex-escape-regex "times")"×")
+    (list (latex-escape-regex "rtimes")"⋊")
     (list (latex-escape-regex "equiv")"≡")
     (list (latex-escape-regex "star")"★")
     (list (latex-escape-regex "nabla")"∇")
@@ -663,6 +664,7 @@ their unicode counterpart"
     (list (latex-escape-regex "circ") "○")
     (list (latex-escape-regex "bigcirc") "◯")
     (list (latex-escape-regex "cdot") "⋅")
+    (list (latex-escape-regex "State") "⋅")
     (list (latex-escape-regex "ast") "∗")
     (list (latex-escape-regex "star") "⋆")
     (list (latex-escape-regex "propto") "∝")
@@ -739,6 +741,7 @@ their unicode counterpart"
 
     (list (latex-escape-regex "la") "⟨")
     (list (latex-escape-regex "ra") "⟩")
+    (list (latex-escape-regex "backslash") "\\")
 
     )))
 
