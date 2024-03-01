@@ -72,15 +72,15 @@ Symbol can be the symbol directly, no lookup needed."
    nil
    `((,pattern
       (0 (progn
-	   ;;Non-working section kind of able to compose multi-char strings:
-	   ;; (compose-string-to-region (match-beginning 1) (match-end 1)
-	   ;; 				  ,symbol
-	   ;; 				  'decompose-region)
-	   ;; (put-text-property (match-beginning 1) (match-end 1) 'display ,symbol)
-	   (compose-region (match-beginning 1) (match-end 1)
-	   		   ,symbol
-	   		   'decompose-region)
-	   nil))))))
+           ;;Non-working section kind of able to compose multi-char strings:
+           ;; (compose-string-to-region (match-beginning 1) (match-end 1)
+           ;;   ,symbol
+           ;;   'decompose-region)
+           ;; (put-text-property (match-beginning 1) (match-end 1) 'display ,symbol)
+           (compose-region (match-beginning 1) (match-end 1)
+                           ,symbol
+                           'decompose-region)
+           nil))))))
 
 ;;The following code can be used to add strings, and not just single
 ;; characters. But not really working yet, as it does not remove the thing that
@@ -88,14 +88,14 @@ Symbol can be the symbol directly, no lookup needed."
 ;; (require 'cl)
 ;; (defun compose-string-to-region (start end string decomposingfunct)
 ;;   (loop for i from 0 to (- (length string) 1)
-;; 	do (compose-region (+ i start) (+  start i 1) (substring string i (+ i 1) ) decomposingfunct)))
+;; do (compose-region (+ i start) (+  start i 1) (substring string i (+ i 1) ) decomposingfunct)))
 
 
 (defun substitute-patterns-with-unicode-symbol (patterns)
   "Mapping over PATTERNS, calling SUBSTITUTE-PATTERN-WITH-UNICODE for each of the patterns."
   (mapcar #'(lambda (x)
               (substitute-pattern-with-unicode-symbol (car x)
-						      (cl-second x)))
+                                                      (cl-second x)))
           patterns))
 
 (defun latex-escape-regex (str)
@@ -372,7 +372,7 @@ their unicode counterpart"
     ;; (list (latex-escape-regex "lt") "<")
     ;; (list (latex-escape-regex "from") ":")
     ;; (list (latex-escape-regex "Pow") "𝒫")
-    ;;     				;"ℒ"
+    ;;     ;"ℒ"
     ;; (list (latex-escape-regex "La") "𝓛")
 
     ;; ;;Does not work, as it pushes them all into one character
